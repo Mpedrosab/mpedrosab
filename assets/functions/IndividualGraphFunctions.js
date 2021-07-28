@@ -7,6 +7,7 @@ var A;
 var ABAM;
 var myImg;
  var nr = 0;
+
  plotData(x,y,value);
 
 /**************************************/
@@ -29,7 +30,7 @@ function plotData(x,y,myName) {
     do{
         i=i+1;
     } while((img[i]=="nan") && (i<(x.length-1)));
-    console.log(x.length-1) 
+    //console.log(x.length-1) 
     
 document.getElementById("BAMimg").innerHTML='<img src="BAMRAW/'+img[i]+'">';
 ABAM = brd.create('glider',[x[i],y[i],d], {strokeColor:"black",fillColor:'blue',setStyle:3});
@@ -44,7 +45,7 @@ ABAM = brd.create('glider',[x[i],y[i],d], {strokeColor:"black",fillColor:'blue',
 function plotMyDB(){
 var value =document.getElementById("myIsothermPlot").innerHTML;
     value=value.trim();
-console.log(value);
+//console.log(value);
     plotData(x,y,value);
 };
  
@@ -56,10 +57,10 @@ console.log(value);
        
          brd.removeObject(A);
    var myCords= getMouseCoords(e);
-          console.log(myCords)
+          //console.log(myCords)
         var myX=FindNearestImg(myCords[0],x);
         var indexData=x.indexOf(myX);
-         console.log(indexData)
+         //console.log(indexData)
         var myY=y[indexData];
         
                var imgIndex=FindNearestImg(indexData,imgArray);
@@ -82,11 +83,14 @@ function movePoint(){
 var indexData=Math.ceil(document.getElementById("sliderVal").value);
 var myX=x[indexData];
 var myY=y[indexData];
-    console.log("PLOT VALUES")
+    //console.log("PLOT VALUES")
    
-    console.log( indexData)
+    //console.log( img)
+   
 //BAM image     
-        var imgIndex=FindNearestImg(indexData,imgArray);
+var imgIndex=FindNearestImg(indexData,imgArray);
+   
+    //console.log( imgIndex)
    brd.removeObject(ABAM);
     ABAM = brd.create('glider',[ x[imgIndex],  y[imgIndex],d], { name:"",strokeColor:"black",fillColor:'blue'});
       

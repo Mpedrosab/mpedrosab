@@ -21,22 +21,22 @@ var colorLegend=[];
 var labelLegend=[];
 var labelLegend=[];
 
-console.log("IndividualGraphLoad")
+//console.log("IndividualGraphLoad")
  $(document).ready(function(){ 
 var xmlhttpData = new XMLHttpRequest(); 
 xmlhttpData.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
-      console.log("Good");  
+      //console.log("Good");  
   var myArrData = JSON.parse(this.responseText); 
   //myArrData = JSON.stringify(myArrData);
   //myArrData = jQuery.parseJSON(myArrData);
       arrayDataLength = Object.keys(myArrData).length;
     
-      console.log(myArrData);
+      //console.log(myArrData);
       myArrNow=JSON.parse(JSON.stringify(myArr));       //Copy array is being 
         arrayNowDataLength = Object.keys(myArrNow).length;
       dataLoaded=true; 
-        console.log(Object.keys(myArrData));
+        //console.log(Object.keys(myArrData));
 
       //Get the data to plot
 
@@ -46,40 +46,53 @@ value=value.trim();
  x=splitData(myArrData[value]["xData"]);
  y=splitData(myArrData[value]["yData"]);
        x=splitArray=x.map(Number);
-       y=splitArray=y.map(Number);
- img=splitData(myArrData[value]["BAMimg"]);
+       var yOld=splitArray=y.map(Number);
+img=splitData(myArrData[value]["BAMimg"]);
+
     var i;
     var x_arr = []; 
     var y_arr = [];
     var y0=y[0];
+      y = yOld.map(function(e) { 
+  return e-y0;
+}); 
+ //imgArray = noFind("nan",img);
+ //console.log(imgArray);
+      maxX=Math.max.apply(null,x);
+      minX=Math.min.apply(null,x);
+      minX=Math.min.apply(null,y);
+      maxY=Math.max.apply(null,y);
+      
+      
     for (i=0;i<x.length-1;i++) {
         
         
         //Remove bias
 
-        y[i]=y[i]-y0;
-        if (x[i]>maxX) maxX = x[i];
-        if (x[i]<minX) minX = x[i];
-        if (y[i]>maxY) maxY = y[i];
-        if (y[i]<minY) minY = y[i];
+        //y[i]=y[i]-y0;
+        //if (x[i]>maxX) maxX = x[i];
+        //if (x[i]<minX) minX = x[i];
+        //if (y[i]>maxY) maxY = y[i];
+        ////if (y[i]<minY) minY = y[i];
         if (img[i]!="nan"){ imgArray.push(i); }
-        x_arr.push(x[i], x[i], NaN);
-        y_arr.push(y[i], y[i], NaN);
+        //x_arr.push(x[i], x[i], NaN);
+        //y_arr.push(y[i], y[i], NaN);
         //c=brd.create('point',[x[i],y[i]],{size:4,strokeWidth: 0,fillColor:color[mycolor]})
         
     }
+    
       
         //var out=createFilter(myArrData,"AllNames");    
 
     document.getElementById("Slider").innerHTML='  <input id="sliderVal" type="range" min="0" max="'+String(x.length-1)+'" value="0" onchange="movePoint()" oninput="movePoint()" >';
-    console.log("LoadGraphFunctions")
+    //console.log("LoadGraphFunctions")
     $.getScript("/assets/functions/IndividualGraphFunctions.js");
     $.getScript("https://code.jquery.com/jquery-3.2.1.min.js");
     
       
   }
     else{
-        console.log ("Problem with JSON for data file!! =>Stataus: " +this.status );
+        //console.log ("Problem with JSON for data file!! =>Stataus: " +this.status );
         dataLoaded=false;
     }
 };
@@ -93,6 +106,16 @@ function splitData(myData){
     myData=myData.replace("[","").replace("]","")
     var splitArray=myData.split(",")
    
-   // console.log(splitArray);
+   // //console.log(splitArray);
     return splitArray;
+}
+
+function noFind(needle, haystack) {
+    needle=String(needle)
+    //console.log(needle);
+    var results = [];
+    for (i=0;i<haystack.length-1;i++){
+if (haystack[i]!=needle){ results.push(i); }
+    return results;
+        }
 }
