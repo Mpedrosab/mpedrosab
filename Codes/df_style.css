@@ -49,30 +49,58 @@ color: white;
 /* BAM IMG */
 
 #BAMimg{
-    display:inline-block;
-    width:36%
-        height:100%;
+    position:absolute;
+    display:inline-block !important;
+float:right !important;
+    margin-right:5%;
+        height:85% !important;
+        max-height:85% !important;
+    max-width:80%;
+    
+}
+#Slider{
+    position:absolute;
+         display:block !important;
+    float:center;
+    margin-left:45%;
+
+
 }
 #headerIMG{
+    position:relative;
     display:block;
-    height: 25%;
+    text-align:left;
+    height: 400px;
     margin-bottom: 30px;
 }
 #BAMimg img{
-
-    width:100% !important;
+background-color:black;
     margin:5px !important;
-   /* height: 100% !important;*/
+   max-height: 100% !important;
+   max-width: 100% !important;
 }
 .jxgbox_Data{
+    position:absolute;
+    float:center;
     display:inline-block !important;
-    width:40% !important;
-    margin:5px !important;
-   /* height: 100% !important;*/
+      margin:5px !important;
+    margin-right:5%  !important;
+    margin-left:20%  !important;
+    width:30% !important;
+  
+    height:85% !important;
+
 }
 
 
 .jxgbox_Data svg{
    /* width:100% !important;*/
-   /* height:100% !important;*/
+   height:100% !important;
+    max-height:100% !important;
+}
+
+.div_isotherm_data{
+    position:relative;
+    display:block;
+
 }

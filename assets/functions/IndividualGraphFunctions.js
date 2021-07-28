@@ -49,6 +49,32 @@ console.log(value);
 };
  
 
+ 
+    
+    d.on('mousemove', function(e) {
+
+       
+         brd.removeObject(A);
+   var myCords= getMouseCoords(e);
+          console.log(myCords)
+        var myX=FindNearestImg(myCords[0],x);
+        var indexData=x.indexOf(myX);
+         console.log(indexData)
+        var myY=y[indexData];
+        
+               var imgIndex=FindNearestImg(indexData,imgArray);
+   brd.removeObject(ABAM);
+    ABAM = brd.create('glider',[ x[imgIndex],  y[imgIndex],d], { name:"",strokeColor:"black",fillColor:'blue'});
+      
+    document.getElementById("BAMimg").innerHTML='<img src="BAMRaw/'+img[imgIndex]+'">';
+    
+   A = brd.create('glider',[myX, myY,d], {name:'['+String(myX)+','+String(myY)+']', strokeColor:"black",fillColor:'white'});
+     document.getElementById("sliderVal").value=indexData;
+
+       
+}); 
+     
+
 
 function movePoint(){
         //Select the index of the data
@@ -60,9 +86,9 @@ var myY=y[indexData];
    
     console.log( indexData)
 //BAM image     
-        var imgIndex=FindNearestImg(indexData,imgArray)
+        var imgIndex=FindNearestImg(indexData,imgArray);
    brd.removeObject(ABAM);
-    ABAM = brd.create('glider',[ x[imgIndex],  y[imgIndex],d], { strokeColor:"black",fillColor:'blue'});
+    ABAM = brd.create('glider',[ x[imgIndex],  y[imgIndex],d], { name:"",strokeColor:"black",fillColor:'blue'});
       
     document.getElementById("BAMimg").innerHTML='<img src="BAMRaw/'+img[imgIndex]+'">';
     
@@ -82,3 +108,17 @@ function FindNearestImg(index,imgArray){
 });
     return closest;
 }
+
+function getMouseCoords(e) {
+    var i;
+        var cPos = brd.getCoordsTopLeftCorner(e, i),
+            absPos = JXG.getPosition(e, i),
+            dx = absPos[0]-cPos[0],
+            dy = absPos[1]-cPos[1];
+   
+        var obj=new JXG.Coords(JXG.COORDS_BY_SCREEN, [dx, dy], brd)
+      
+            var label=[Math.round((obj.usrCoords[1] + Number.EPSILON) * 100) / 100,Math.round((obj.usrCoords[2] + Number.EPSILON) * 100) / 100]
+        return [obj.usrCoords[1], obj.usrCoords[2], label[0],label[1]];
+    }
+
