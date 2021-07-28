@@ -35,7 +35,7 @@ function plotData(x,y,myName) {
 document.getElementById("BAMimg").innerHTML='<img src="BAMRAW/'+img[i]+'">';
 ABAM = brd.create('glider',[x[i],y[i],d], {name:"",strokeColor:"black",fillColor:'blue',setStyle:3});
    
-          
+           
         //colorLegend.push(nr%color.length);
     A=brd.create('glider',[x[0],y[0],d], {name:'['+String(x[0])+','+String(y[0])+']', strokeColor:"black",fillColor:'white'});
   

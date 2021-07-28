@@ -21,7 +21,8 @@ xmlhttp.onreadystatechange = function () {
    // console.log(myArr);
  
           $(document).ready(function(){ 
-              document.getElementById("Slider").innerHTML="<h2>Loading ...</p>"
+              document.getElementById("BAMimg").innerHTML='<h2 style="display:block; width: 300%; margin-left:300% !important">Loading ...</h2>'
+           
                   $.getScript("/assets/functions/IndividualGraphLoad.js");
               
       console.log("HOLA")

@@ -81,7 +81,7 @@ img=splitData(myArrData[value]["BAMimg"]);
         
     }
     
-      
+       
         //var out=createFilter(myArrData,"AllNames");    
 
     document.getElementById("Slider").innerHTML='  <input id="sliderVal" type="range" min="0" max="'+String(x.length-1)+'" value="0" onchange="movePoint()" oninput="movePoint()" >';
