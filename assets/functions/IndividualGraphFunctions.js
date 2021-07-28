@@ -31,7 +31,7 @@ function plotData(x,y,myName) {
     } while((img[i]=="nan") && (i<(x.length-1)));
     console.log(x.length-1) 
     
-document.getElementById("BAMimg").innerHTML='<img src="BAMRaw/'+img[i]+'">';
+document.getElementById("BAMimg").innerHTML='<img src="BAMRAW/'+img[i]+'">';
 ABAM = brd.create('glider',[x[i],y[i],d], {strokeColor:"black",fillColor:'blue',setStyle:3});
    
           
@@ -66,7 +66,7 @@ console.log(value);
    brd.removeObject(ABAM);
     ABAM = brd.create('glider',[ x[imgIndex],  y[imgIndex],d], { name:"",strokeColor:"black",fillColor:'blue'});
       
-    document.getElementById("BAMimg").innerHTML='<img src="BAMRaw/'+img[imgIndex]+'">';
+    document.getElementById("BAMimg").innerHTML='<img src="BAMRAW/'+img[imgIndex]+'">';
     
    A = brd.create('glider',[myX, myY,d], {name:'['+String(myX)+','+String(myY)+']', strokeColor:"black",fillColor:'white'});
      document.getElementById("sliderVal").value=indexData;
@@ -90,7 +90,7 @@ var myY=y[indexData];
    brd.removeObject(ABAM);
     ABAM = brd.create('glider',[ x[imgIndex],  y[imgIndex],d], { name:"",strokeColor:"black",fillColor:'blue'});
       
-    document.getElementById("BAMimg").innerHTML='<img src="BAMRaw/'+img[imgIndex]+'">';
+    document.getElementById("BAMimg").innerHTML='<img src="BAMRAW/'+img[imgIndex]+'">';
     
          brd.removeObject(A);
        // brd.create('point', [coords.usrCoords[1], coords.usrCoords[2]]);
