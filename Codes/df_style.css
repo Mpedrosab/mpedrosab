@@ -1,4 +1,4 @@
-.isotherm_data {
+ .isotherm_data {
 border-collapse: collapse;
 /*width: 100%;*/
 font-size:20px;
@@ -41,4 +41,38 @@ padding-bottom: 12px;
 text-align: center;
 background-color: #4CAF50;
 color: white;
+}
+
+
+
+/*******************************/
+/* BAM IMG */
+
+#BAMimg{
+    display:inline-block;
+    width:36%
+        height:100%;
+}
+#headerIMG{
+    display:block;
+    height: 25%;
+    margin-bottom: 30px;
+}
+#BAMimg img{
+
+    width:100% !important;
+    margin:5px !important;
+   /* height: 100% !important;*/
+}
+.jxgbox_Data{
+    display:inline-block !important;
+    width:40% !important;
+    margin:5px !important;
+   /* height: 100% !important;*/
+}
+
+
+.jxgbox_Data svg{
+   /* width:100% !important;*/
+   /* height:100% !important;*/
 }

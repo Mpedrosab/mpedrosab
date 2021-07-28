@@ -2,12 +2,28 @@
         <!DOCTYPE html>
         <html>
         <head><title>HTML Pandas Dataframe with CSS</title></head>
-        <link rel="stylesheet" type="text/css" href="../../Codes/df_style.css"/>
+        <link rel="stylesheet" type="text/css" href="../../Codes/df_style.css"/>      
+ <link rel="stylesheet" type="text/css" href="https://jsxgraph.org/distrib/jsxgraph.css" />
+ <script type="text/javascript" src="https://jsxgraph.org/distrib/jsxgraphcore.js">
+     <script type="text/javascript" src="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script src="/assets/functions/functionsLoadIndividual.js"></script> 
+      </script>
         <body>
         <div class="title isotherm_data"><h2>
         Chol_B0720N20
         </h2>
-        <img src="Chol_B0720N20.png" height="100%"></div>
+        <div id="myIsothermPlot" style="display:none">
+        Chol_B0720N20
+        </div>
+
+<div id="headerIMG">
+        <div id="jxgbox" class="jxgbox_Data" style="width:600px; max-width:100%; height:350px;margin:50px"></div>
+
+<div id="BAMimg"></div>
+<div id="Slider"></div>
+</div>
+
         <div class="div_isotherm_data">
             <table border="1" class="dataframe isotherm_data">
   <thead>
@@ -28,25 +44,25 @@
     <tr>
       <td>61.022019</td>
       <td>0.023430</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>60.952388</td>
       <td>0.033716</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>60.887768</td>
       <td>0.033716</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>60.813128</td>
       <td>0.044764</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -58,25 +74,25 @@
     <tr>
       <td>60.678877</td>
       <td>0.038288</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>60.610082</td>
       <td>0.051431</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>60.545294</td>
       <td>0.077528</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>60.480506</td>
       <td>0.095433</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -88,25 +104,25 @@
     <tr>
       <td>60.343250</td>
       <td>0.124387</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>60.274454</td>
       <td>0.122482</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>60.205826</td>
       <td>0.123435</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>60.141038</td>
       <td>0.125339</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -118,19 +134,19 @@
     <tr>
       <td>60.007956</td>
       <td>0.099052</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>59.939328</td>
       <td>0.083242</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>59.870699</td>
       <td>0.073908</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -142,25 +158,25 @@
     <tr>
       <td>59.737784</td>
       <td>0.074861</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>59.668655</td>
       <td>0.074861</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>59.604368</td>
       <td>0.071051</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>59.535573</td>
       <td>0.075623</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -172,25 +188,25 @@
     <tr>
       <td>59.398483</td>
       <td>0.071051</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>59.334363</td>
       <td>0.079432</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>59.265902</td>
       <td>0.068194</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>59.197608</td>
       <td>0.089719</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -202,25 +218,25 @@
     <tr>
       <td>59.064192</td>
       <td>0.081337</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>58.995396</td>
       <td>0.082290</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>58.931277</td>
       <td>0.092576</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>58.862314</td>
       <td>0.097148</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -232,19 +248,19 @@
     <tr>
       <td>58.729566</td>
       <td>0.092576</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>58.661105</td>
       <td>0.103815</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>58.592142</td>
       <td>0.104767</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -256,25 +272,25 @@
     <tr>
       <td>58.455220</td>
       <td>0.128959</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>58.386425</td>
       <td>0.137340</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>58.321637</td>
       <td>0.144959</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>58.257183</td>
       <td>0.170103</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -286,25 +302,25 @@
     <tr>
       <td>58.123433</td>
       <td>0.170103</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>58.054304</td>
       <td>0.172961</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>57.985174</td>
       <td>0.173913</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>57.916379</td>
       <td>0.167437</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -316,25 +332,25 @@
     <tr>
       <td>57.778622</td>
       <td>0.162675</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>57.709659</td>
       <td>0.166484</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>57.640697</td>
       <td>0.171056</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>57.571568</td>
       <td>0.161722</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -346,19 +362,19 @@
     <tr>
       <td>57.438820</td>
       <td>0.162675</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>57.369690</td>
       <td>0.144959</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>57.301062</td>
       <td>0.130863</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -370,25 +386,25 @@
     <tr>
       <td>57.167646</td>
       <td>0.117720</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>57.099018</td>
       <td>0.119625</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>57.030055</td>
       <td>0.111243</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>56.961260</td>
       <td>0.105719</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -400,25 +416,25 @@
     <tr>
       <td>56.828512</td>
       <td>0.143055</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>56.759550</td>
       <td>0.170103</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>56.690921</td>
       <td>0.191628</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>56.622126</td>
       <td>0.199057</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -430,19 +446,19 @@
     <tr>
       <td>56.484369</td>
       <td>0.205724</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>56.415573</td>
       <td>0.212201</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>56.346945</td>
       <td>0.196390</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -454,25 +470,25 @@
     <tr>
       <td>56.209020</td>
       <td>0.178485</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>56.140392</td>
       <td>0.181342</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>56.071597</td>
       <td>0.173913</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>56.002468</td>
       <td>0.188009</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -484,25 +500,25 @@
     <tr>
       <td>55.868551</td>
       <td>0.191628</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>55.799922</td>
       <td>0.191628</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>55.730960</td>
       <td>0.198295</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>55.666005</td>
       <td>0.194486</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -514,25 +530,25 @@
     <tr>
       <td>55.533090</td>
       <td>0.207629</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>55.464462</td>
       <td>0.225344</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>55.395833</td>
       <td>0.220582</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>55.327205</td>
       <td>0.235630</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -544,19 +560,19 @@
     <tr>
       <td>55.189448</td>
       <td>0.251441</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>55.120652</td>
       <td>0.257155</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>55.051857</td>
       <td>0.275823</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -568,25 +584,25 @@
     <tr>
       <td>54.918942</td>
       <td>0.277728</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>54.850147</td>
       <td>0.276775</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>54.785359</td>
       <td>0.267442</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>54.716063</td>
       <td>0.271061</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -598,25 +614,25 @@
     <tr>
       <td>54.577971</td>
       <td>0.279633</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>54.509510</td>
       <td>0.280395</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>54.444722</td>
       <td>0.285157</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>54.379767</td>
       <td>0.303824</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -628,25 +644,25 @@
     <tr>
       <td>54.251527</td>
       <td>0.336588</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>54.182899</td>
       <td>0.371256</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>54.114438</td>
       <td>0.387066</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>54.045976</td>
       <td>0.383257</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -658,19 +674,19 @@
     <tr>
       <td>53.908219</td>
       <td>0.398305</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>53.839591</td>
       <td>0.400210</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>53.770962</td>
       <td>0.408591</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -682,25 +698,25 @@
     <tr>
       <td>53.633539</td>
       <td>0.422687</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>53.564576</td>
       <td>0.430116</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>53.499288</td>
       <td>0.442307</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>53.430826</td>
       <td>0.450689</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -712,25 +728,25 @@
     <tr>
       <td>53.293737</td>
       <td>0.468404</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>53.225275</td>
       <td>0.470309</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>53.155478</td>
       <td>0.467451</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>53.086683</td>
       <td>0.469356</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -742,19 +758,19 @@
     <tr>
       <td>52.949593</td>
       <td>0.477737</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>52.881299</td>
       <td>0.514311</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>52.816511</td>
       <td>0.541360</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -766,25 +782,25 @@
     <tr>
       <td>52.683262</td>
       <td>0.570313</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>52.614968</td>
       <td>0.600220</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>52.551015</td>
       <td>0.613363</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>52.482387</td>
       <td>0.630126</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -796,25 +812,25 @@
     <tr>
       <td>52.345297</td>
       <td>0.659270</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>52.276502</td>
       <td>0.664794</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>52.207539</td>
       <td>0.664794</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>52.139078</td>
       <td>0.669556</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -826,25 +842,25 @@
     <tr>
       <td>52.001988</td>
       <td>0.713368</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>51.937034</td>
       <td>0.768609</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>51.868906</td>
       <td>0.800420</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>51.799944</td>
       <td>0.820992</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -856,19 +872,19 @@
     <tr>
       <td>51.662687</td>
       <td>0.878900</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>51.598234</td>
       <td>0.899472</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>51.529438</td>
       <td>0.931283</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -880,25 +896,25 @@
     <tr>
       <td>51.396189</td>
       <td>0.982714</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>51.327561</td>
       <td>1.016430</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>51.258933</td>
       <td>1.063099</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>51.190137</td>
       <td>1.094910</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -910,19 +926,19 @@
     <tr>
       <td>51.052714</td>
       <td>1.183677</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>50.983918</td>
       <td>1.238917</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>50.914288</td>
       <td>1.267871</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -934,13 +950,13 @@
     <tr>
       <td>50.776030</td>
       <td>1.358542</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>50.707401</td>
       <td>1.399687</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -952,7 +968,7 @@
     <tr>
       <td>50.574987</td>
       <td>1.531503</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -964,13 +980,13 @@
     <tr>
       <td>50.436562</td>
       <td>1.683129</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>50.367933</td>
       <td>1.748466</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -982,13 +998,13 @@
     <tr>
       <td>50.230677</td>
       <td>1.858757</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>50.162216</td>
       <td>1.945809</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1000,13 +1016,13 @@
     <tr>
       <td>50.030636</td>
       <td>2.043147</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>49.965180</td>
       <td>2.118770</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1018,13 +1034,13 @@
     <tr>
       <td>49.830929</td>
       <td>2.259919</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>49.763971</td>
       <td>2.354400</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1036,13 +1052,13 @@
     <tr>
       <td>49.629553</td>
       <td>2.525456</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>49.564431</td>
       <td>2.586411</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1054,13 +1070,13 @@
     <tr>
       <td>49.429679</td>
       <td>2.792897</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>49.363222</td>
       <td>2.897664</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1072,7 +1088,7 @@
     <tr>
       <td>49.227134</td>
       <td>3.110818</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1084,13 +1100,13 @@
     <tr>
       <td>49.089543</td>
       <td>3.305303</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>49.020581</td>
       <td>3.405499</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1102,13 +1118,13 @@
     <tr>
       <td>48.886831</td>
       <td>3.631795</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>48.819539</td>
       <td>3.725133</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1120,13 +1136,13 @@
     <tr>
       <td>48.687458</td>
       <td>3.957144</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>48.619498</td>
       <td>4.083246</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1138,13 +1154,13 @@
     <tr>
       <td>48.483076</td>
       <td>4.361926</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>48.415617</td>
       <td>4.504028</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1156,13 +1172,13 @@
     <tr>
       <td>48.282702</td>
       <td>4.777184</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>48.216411</td>
       <td>4.903286</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1174,13 +1190,13 @@
     <tr>
       <td>48.080156</td>
       <td>5.158727</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>48.014200</td>
       <td>5.269018</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1192,7 +1208,7 @@
     <tr>
       <td>47.876609</td>
       <td>5.572842</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1204,13 +1220,13 @@
     <tr>
       <td>47.739519</td>
       <td>5.938383</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>47.672895</td>
       <td>6.090010</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1222,13 +1238,13 @@
     <tr>
       <td>47.538477</td>
       <td>6.406978</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>47.473856</td>
       <td>6.525650</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1240,13 +1256,13 @@
     <tr>
       <td>47.340106</td>
       <td>6.841665</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>47.275151</td>
       <td>6.977291</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1258,13 +1274,13 @@
     <tr>
       <td>47.140232</td>
       <td>7.280353</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>47.072606</td>
       <td>7.434456</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1276,13 +1292,13 @@
     <tr>
       <td>46.940526</td>
       <td>7.719803</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>46.873734</td>
       <td>7.909527</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1294,13 +1310,13 @@
     <tr>
       <td>46.736645</td>
       <td>8.328404</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>46.666680</td>
       <td>8.533176</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1312,13 +1328,13 @@
     <tr>
       <td>46.532429</td>
       <td>8.868050</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>46.465972</td>
       <td>9.012057</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1330,7 +1346,7 @@
     <tr>
       <td>46.332723</td>
       <td>9.341025</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1342,13 +1358,13 @@
     <tr>
       <td>46.195299</td>
       <td>9.675898</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>46.128174</td>
       <td>9.851716</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1360,13 +1376,13 @@
     <tr>
       <td>45.998598</td>
       <td>10.255545</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>45.932808</td>
       <td>10.475366</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1384,13 +1400,13 @@
     <tr>
       <td>45.406658</td>
       <td>11.906864</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>45.339199</td>
       <td>12.067633</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1402,13 +1418,13 @@
     <tr>
       <td>45.204781</td>
       <td>12.481939</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>45.139325</td>
       <td>12.719475</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1420,13 +1436,13 @@
     <tr>
       <td>45.002736</td>
       <td>13.196260</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>44.935778</td>
       <td>13.423509</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1438,13 +1454,13 @@
     <tr>
       <td>44.800692</td>
       <td>13.766763</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>44.733733</td>
       <td>13.950963</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1456,7 +1472,7 @@
     <tr>
       <td>44.603323</td>
       <td>14.292122</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1468,13 +1484,13 @@
     <tr>
       <td>44.468738</td>
       <td>14.699952</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>44.398941</td>
       <td>14.928915</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1486,13 +1502,13 @@
     <tr>
       <td>44.261517</td>
       <td>15.415224</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>44.192388</td>
       <td>15.674285</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1504,13 +1520,13 @@
     <tr>
       <td>44.057135</td>
       <td>16.120211</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>43.992180</td>
       <td>16.340031</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1528,13 +1544,13 @@
     <tr>
       <td>43.335786</td>
       <td>18.340890</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>43.269830</td>
       <td>18.531757</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1546,13 +1562,13 @@
     <tr>
       <td>43.133742</td>
       <td>19.016923</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>43.066950</td>
       <td>19.197503</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1570,13 +1586,13 @@
     <tr>
       <td>42.654346</td>
       <td>20.420420</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>42.589558</td>
       <td>20.653383</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1588,13 +1604,13 @@
     <tr>
       <td>42.456476</td>
       <td>21.118930</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>42.388849</td>
       <td>21.354560</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1606,13 +1622,13 @@
     <tr>
       <td>42.258606</td>
       <td>21.793058</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>42.190312</td>
       <td>21.957637</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1624,13 +1640,13 @@
     <tr>
       <td>42.053723</td>
       <td>22.355180</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>41.985929</td>
       <td>22.556143</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1642,13 +1658,13 @@
     <tr>
       <td>41.851845</td>
       <td>22.965686</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>41.783885</td>
       <td>23.174268</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1660,7 +1676,7 @@
     <tr>
       <td>41.651638</td>
       <td>23.624956</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1672,13 +1688,13 @@
     <tr>
       <td>41.516719</td>
       <td>24.144791</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>41.448425</td>
       <td>24.364611</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1690,13 +1706,13 @@
     <tr>
       <td>41.313673</td>
       <td>24.773203</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>41.245378</td>
       <td>24.975117</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1708,13 +1724,13 @@
     <tr>
       <td>41.112296</td>
       <td>25.367898</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>41.044336</td>
       <td>25.595147</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1726,13 +1742,13 @@
     <tr>
       <td>40.908248</td>
       <td>26.072885</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>40.840288</td>
       <td>26.320706</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1744,13 +1760,13 @@
     <tr>
       <td>40.703198</td>
       <td>26.881686</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>40.635572</td>
       <td>27.106078</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1762,13 +1778,13 @@
     <tr>
       <td>40.498482</td>
       <td>27.624960</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>40.432024</td>
       <td>27.844780</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1780,7 +1796,7 @@
     <tr>
       <td>40.297606</td>
       <td>28.253371</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1792,13 +1808,13 @@
     <tr>
       <td>40.160851</td>
       <td>28.717203</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>40.091387</td>
       <td>28.990169</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1810,13 +1826,13 @@
     <tr>
       <td>39.959140</td>
       <td>29.563340</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>39.894018</td>
       <td>29.859735</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1828,13 +1844,13 @@
     <tr>
       <td>39.759600</td>
       <td>30.444144</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>39.693477</td>
       <td>30.683585</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1846,13 +1862,13 @@
     <tr>
       <td>39.556053</td>
       <td>31.155798</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>39.489763</td>
       <td>31.384000</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1864,13 +1880,13 @@
     <tr>
       <td>39.353174</td>
       <td>31.850498</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>39.284212</td>
       <td>32.136608</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1882,7 +1898,7 @@
     <tr>
       <td>39.150963</td>
       <td>32.710731</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1894,13 +1910,13 @@
     <tr>
       <td>39.014207</td>
       <td>33.368096</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>38.949252</td>
       <td>33.684111</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1912,13 +1928,13 @@
     <tr>
       <td>38.814166</td>
       <td>34.221852</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>38.747709</td>
       <td>34.472340</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1930,13 +1946,13 @@
     <tr>
       <td>38.611454</td>
       <td>34.916552</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>38.545497</td>
       <td>35.096180</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1948,13 +1964,13 @@
     <tr>
       <td>38.409744</td>
       <td>35.653350</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>38.341449</td>
       <td>35.947840</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1966,13 +1982,13 @@
     <tr>
       <td>38.205361</td>
       <td>36.569775</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>38.138236</td>
       <td>36.904458</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1984,13 +2000,13 @@
     <tr>
       <td>38.005822</td>
       <td>37.420674</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>37.936859</td>
       <td>37.689068</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2002,7 +2018,7 @@
     <tr>
       <td>37.800772</td>
       <td>38.147185</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2014,13 +2030,13 @@
     <tr>
       <td>37.664350</td>
       <td>38.564158</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>37.598059</td>
       <td>38.798836</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2032,13 +2048,13 @@
     <tr>
       <td>37.464643</td>
       <td>39.301908</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>37.399688</td>
       <td>39.597351</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2050,13 +2066,13 @@
     <tr>
       <td>37.263434</td>
       <td>40.194903</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>37.193637</td>
       <td>40.500633</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2068,13 +2084,13 @@
     <tr>
       <td>37.055044</td>
       <td>40.983132</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>36.986917</td>
       <td>41.130949</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2086,13 +2102,13 @@
     <tr>
       <td>36.846655</td>
       <td>41.560113</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>36.778694</td>
       <td>41.751741</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2104,7 +2120,7 @@
     <tr>
       <td>36.641271</td>
       <td>42.208906</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2116,13 +2132,13 @@
     <tr>
       <td>36.511361</td>
       <td>42.677500</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>36.442900</td>
       <td>42.881320</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2134,13 +2150,13 @@
     <tr>
       <td>36.312155</td>
       <td>43.322674</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>36.245531</td>
       <td>43.515255</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2152,13 +2168,13 @@
     <tr>
       <td>36.114953</td>
       <td>43.790126</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>36.044822</td>
       <td>43.943466</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2170,13 +2186,13 @@
     <tr>
       <td>35.911406</td>
       <td>44.233385</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>35.843613</td>
       <td>44.411108</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2188,13 +2204,13 @@
     <tr>
       <td>35.709529</td>
       <td>44.795317</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>35.645576</td>
       <td>44.984279</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2206,13 +2222,13 @@
     <tr>
       <td>35.514664</td>
       <td>45.348868</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>35.449376</td>
       <td>45.519924</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2224,13 +2240,13 @@
     <tr>
       <td>35.313956</td>
       <td>45.783746</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>35.244326</td>
       <td>45.908133</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2242,13 +2258,13 @@
     <tr>
       <td>35.110075</td>
       <td>46.178242</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>35.045287</td>
       <td>46.290437</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2260,7 +2276,7 @@
     <tr>
       <td>34.905859</td>
       <td>46.503591</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2272,13 +2288,13 @@
     <tr>
       <td>34.768269</td>
       <td>46.680361</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>34.703481</td>
       <td>46.716934</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2290,13 +2306,13 @@
     <tr>
       <td>34.566892</td>
       <td>46.597119</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>34.499767</td>
       <td>46.469113</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2308,13 +2324,13 @@
     <tr>
       <td>34.366351</td>
       <td>46.191385</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>34.302231</td>
       <td>46.052902</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2326,13 +2342,13 @@
     <tr>
       <td>34.167145</td>
       <td>45.770603</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>34.102023</td>
       <td>45.693075</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2344,13 +2360,13 @@
     <tr>
       <td>33.968941</td>
       <td>45.591165</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>33.904320</td>
       <td>45.552687</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2362,13 +2378,13 @@
     <tr>
       <td>33.767899</td>
       <td>45.546211</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>33.700773</td>
       <td>45.528496</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2380,7 +2396,7 @@
     <tr>
       <td>33.563850</td>
       <td>45.486398</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2392,13 +2408,13 @@
     <tr>
       <td>33.426761</td>
       <td>45.439539</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>33.361806</td>
       <td>45.439539</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2410,13 +2426,13 @@
     <tr>
       <td>33.228056</td>
       <td>45.429253</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>33.160096</td>
       <td>45.438587</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2428,13 +2444,13 @@
     <tr>
       <td>33.025678</td>
       <td>45.501256</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.956214</td>
       <td>45.525638</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2446,73 +2462,73 @@
     <tr>
       <td>32.820461</td>
       <td>45.562021</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.753335</td>
       <td>45.562974</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.688547</td>
       <td>45.555545</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.620420</td>
       <td>45.542401</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.556133</td>
       <td>45.506018</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.487839</td>
       <td>45.503161</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.418710</td>
       <td>45.505066</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.352085</td>
       <td>45.506971</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.284292</td>
       <td>45.533067</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.218001</td>
       <td>45.573260</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.150542</td>
       <td>45.610785</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>32.083082</td>
       <td>45.635930</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2524,91 +2540,91 @@
     <tr>
       <td>31.947161</td>
       <td>45.692123</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.879702</td>
       <td>45.689265</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.810239</td>
       <td>45.678979</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.740275</td>
       <td>45.687361</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.672314</td>
       <td>45.686408</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.605857</td>
       <td>45.686408</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.537896</td>
       <td>45.694790</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.470103</td>
       <td>45.728505</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.401808</td>
       <td>45.750983</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.333681</td>
       <td>45.790223</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.269728</td>
       <td>45.840701</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.204439</td>
       <td>45.872512</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.137314</td>
       <td>45.919181</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.068853</td>
       <td>45.938992</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>31.001226</td>
       <td>45.922991</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2620,61 +2636,61 @@
     <tr>
       <td>30.866975</td>
       <td>45.872512</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>30.798681</td>
       <td>45.880894</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>30.731722</td>
       <td>45.864131</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>30.664430</td>
       <td>45.874417</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>30.596302</td>
       <td>45.894990</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>30.528843</td>
       <td>45.935182</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>30.461050</td>
       <td>45.975375</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>30.395093</td>
       <td>46.017472</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>30.328635</td>
       <td>46.038044</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>30.263848</td>
       <td>46.075379</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2686,235 +2702,235 @@
     <tr>
       <td>30.125756</td>
       <td>46.081094</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>30.056794</td>
       <td>46.069855</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.987665</td>
       <td>46.038997</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.920539</td>
       <td>46.038997</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.852579</td>
       <td>46.013662</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.784952</td>
       <td>46.031568</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.715823</td>
       <td>46.070808</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.649365</td>
       <td>46.108143</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.581405</td>
       <td>46.053855</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.513278</td>
       <td>46.178242</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.444983</td>
       <td>46.241864</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.376021</td>
       <td>46.291390</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.311901</td>
       <td>46.321296</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.247280</td>
       <td>46.309105</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.180155</td>
       <td>46.287771</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.112695</td>
       <td>46.267198</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>29.044902</td>
       <td>46.256912</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.977109</td>
       <td>46.254055</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.908647</td>
       <td>46.270817</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.840520</td>
       <td>46.285866</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.773060</td>
       <td>46.330630</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.706102</td>
       <td>46.355964</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.637140</td>
       <td>46.393300</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.567009</td>
       <td>46.431587</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.498714</td>
       <td>46.471970</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.429752</td>
       <td>46.473684</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.362626</td>
       <td>46.453112</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.294499</td>
       <td>46.427016</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.230045</td>
       <td>46.398062</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.162085</td>
       <td>46.386823</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.094124</td>
       <td>46.397109</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>28.028335</td>
       <td>46.401681</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>27.960875</td>
       <td>46.430825</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>27.893082</td>
       <td>46.483971</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>27.826123</td>
       <td>46.515782</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>27.760167</td>
       <td>46.563594</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>27.691538</td>
       <td>46.583214</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>27.623745</td>
       <td>46.599024</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>27.559792</td>
       <td>46.607405</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2926,13 +2942,13 @@
     <tr>
       <td>27.422703</td>
       <td>46.646836</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>27.354742</td>
       <td>46.637311</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2944,97 +2960,97 @@
     <tr>
       <td>27.220825</td>
       <td>46.650455</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>27.152197</td>
       <td>46.651407</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>27.087910</td>
       <td>46.681314</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>27.020784</td>
       <td>46.700934</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.950820</td>
       <td>46.760746</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.882860</td>
       <td>46.786081</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.814900</td>
       <td>46.814082</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.751114</td>
       <td>46.826273</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.681817</td>
       <td>46.831035</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.615026</td>
       <td>46.815034</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.546398</td>
       <td>46.790652</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.481610</td>
       <td>46.727221</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.412481</td>
       <td>46.703791</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.343351</td>
       <td>46.716934</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.278397</td>
       <td>46.765508</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.211271</td>
       <td>46.793510</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -3046,217 +3062,217 @@
     <tr>
       <td>26.074682</td>
       <td>46.872180</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>26.007390</td>
       <td>46.887990</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.939930</td>
       <td>46.913134</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.870801</td>
       <td>46.935612</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.804845</td>
       <td>46.941326</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.737886</td>
       <td>46.937517</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.667755</td>
       <td>46.916944</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.598793</td>
       <td>46.866465</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.530999</td>
       <td>46.854274</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.463039</td>
       <td>46.869323</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.395746</td>
       <td>46.896372</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.329289</td>
       <td>46.928183</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.262330</td>
       <td>46.970280</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.195205</td>
       <td>47.008568</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.128079</td>
       <td>47.052570</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>25.058616</td>
       <td>47.075047</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.991491</td>
       <td>47.076952</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.925367</td>
       <td>47.055427</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.857908</td>
       <td>47.014282</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.790615</td>
       <td>46.993710</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.722822</td>
       <td>46.969328</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.658702</td>
       <td>46.951612</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.592912</td>
       <td>46.953517</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.525453</td>
       <td>46.963803</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.455488</td>
       <td>46.994662</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.387361</td>
       <td>47.058094</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.317898</td>
       <td>47.099239</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.248602</td>
       <td>47.140383</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.183981</td>
       <td>47.145146</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.114351</td>
       <td>47.150670</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>24.046724</td>
       <td>47.118097</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.977929</td>
       <td>47.115239</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.911638</td>
       <td>47.074095</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.844680</td>
       <td>47.034855</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.776553</td>
       <td>47.015235</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.706588</td>
       <td>47.031045</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -3268,169 +3284,169 @@
     <tr>
       <td>23.571669</td>
       <td>47.098286</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.505880</td>
       <td>47.158289</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.438253</td>
       <td>47.188195</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.369792</td>
       <td>47.235817</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.302834</td>
       <td>47.264770</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.235708</td>
       <td>47.251627</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.165911</td>
       <td>47.221721</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.095947</td>
       <td>47.196577</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>23.028654</td>
       <td>47.172195</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.962865</td>
       <td>47.145146</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.895071</td>
       <td>47.138669</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.829615</td>
       <td>47.140383</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.761154</td>
       <td>47.144193</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.694363</td>
       <td>47.160003</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.625567</td>
       <td>47.221721</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.560613</td>
       <td>47.265723</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.493320</td>
       <td>47.280771</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.424191</td>
       <td>47.297534</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.355563</td>
       <td>47.280771</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.288771</td>
       <td>47.251627</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.224484</td>
       <td>47.213339</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.158528</td>
       <td>47.189910</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.090734</td>
       <td>47.155432</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>22.025946</td>
       <td>47.138669</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.960825</td>
       <td>47.136764</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.895536</td>
       <td>47.156384</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.829746</td>
       <td>47.189148</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.763790</td>
       <td>47.240579</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -3442,67 +3458,67 @@
     <tr>
       <td>21.634381</td>
       <td>47.315249</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.564584</td>
       <td>47.333155</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.500297</td>
       <td>47.332202</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.433338</td>
       <td>47.310677</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.367549</td>
       <td>47.277914</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.299588</td>
       <td>47.254484</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.229624</td>
       <td>47.232959</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.165671</td>
       <td>47.236769</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.100550</td>
       <td>47.251627</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>21.036096</td>
       <td>47.281724</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>20.967467</td>
       <td>47.315249</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -3514,43 +3530,43 @@
     <tr>
       <td>20.832549</td>
       <td>47.404206</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>20.766926</td>
       <td>47.417159</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>20.699299</td>
       <td>47.395634</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>20.632341</td>
       <td>47.378871</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>20.562377</td>
       <td>47.348013</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>20.495251</td>
       <td>47.335822</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
       <td>20.427291</td>
       <td>47.303058</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -3562,7 +3578,7 @@
     <tr>
       <td>20.293875</td>
       <td>47.294677</td>
-      <td><img src="BAMRAW/nan" ></td>
+      <td></td>
       <td></td>
     </tr>
   </tbody>

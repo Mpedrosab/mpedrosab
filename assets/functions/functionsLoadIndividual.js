@@ -18,55 +18,15 @@ xmlhttp.onreadystatechange = function () {
     
   myArr = jQuery.parseJSON(this.responseText);
       arrayLength = Object.keys(myArr).length;
-     // console.log(JSON.stringify(myArr));
-      //Order by date
-          myArr=sortByDate(myArr);
    // console.log(myArr);
-    //Create  selections
-    var out=createFilter(myArr,"Substance1");   
-    document.getElementById("Substance1Suggest").innerHTML=out;
-    out=createFilter(myArr,"Temperature");     
-    document.getElementById("TemperatureSuggest").innerHTML=out;
-    out=createFilter(myArr,"Speed");     
-       
-       document.getElementById("SpeedSuggest").innerHTML=out;
-
-
-
-      
-      
-     out= CreateSuggest(myArr,"Name")
-     document.getElementById("NameSuggest").innerHTML=out;
-     
+ 
           $(document).ready(function(){ 
 
+                  $.getScript("/assets/functions/IndividualGraphLoad.js");
+              
       console.log("HOLA")
          //Create Div
-      var myURL= window.location.href; 
-              console.log(myURL.indexOf("comparison"))
-      if (myURL.indexOf("isotherm-data")>=0){
-       out=createDiv(myArr);
-      //console.log(out);
-      document.getElementById("isotherm_button_in").innerHTML=out;
-                 document.getElementById("NameSuggest").style.display = "none"
-       document.getElementById("Substance1Suggest").style.display = "none"
-       document.getElementById("TemperatureSuggest").style.display = "none"
-       document.getElementById("SpeedSuggest").style.display = "none"
-     
-    $.getScript("https://code.jquery.com/jquery-3.2.1.min.js");
-    $.getScript("/assets/functions/functions.js");
 
-     }
-      else if(myURL.indexOf("isotherm-comparison")>=0){
-                  console.log(myURL)
-      $.getScript("https://code.jquery.com/jquery-3.2.1.min.js");
-    $.getScript("/assets/functions/GraphLoadFunctions.js");
-              
-       document.getElementById("NameSuggest").style.display = "block"
-       document.getElementById("Substance1Suggest").style.display = "none"
-       document.getElementById("TemperatureSuggest").style.display = "none"
-       document.getElementById("SpeedSuggest").style.display = "none"
-      }
 
        
       });
@@ -79,9 +39,6 @@ xmlhttp.onreadystatechange = function () {
 
 
 xmlhttp.send(); 
-    
-     document.getElementById('NameSuggest').style.display = "none"; //Hide name suggestins
-    
 
     
 };
@@ -132,28 +89,6 @@ xmlhttp.send();
      return strOut;
      
  };
-
-/**************************************/
-/*Create list of suggestions*/
-function CreateSuggest(array,parameter){
-    //Parameter => what parameter to compare
-var srt = "";
-    var tempstr;
-    
-for (var [key, value] of Object.entries(array))
-{
-        //console.log("HERE")
-           tempstr= "<li class='SuggestedNameSelect' id='"+FixID(value[parameter])+"' style='display:block' >myVal</li>";
-        tempstr=tempstr.replaceAll("myVal",value[parameter])
-        srt +=tempstr;  
- 
-    }
- 
-         srt += "<li id='noMatchesName' style='display:none'>No matches found!!</li>";
-     
-
-return srt;
-    };
 
 
 /**************************************************/
